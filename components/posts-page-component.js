@@ -45,14 +45,14 @@ export function renderPostsPageComponent({ appEl }) {
     })
     .join("");
 
-  const appHtml = `
-    <div class="page-container">
-      <div class="header-container"></div>
-      <ul class="posts">
-        ${postsHtml}
-      </ul>
-    </div>
-  `;
+const appHtml = `
+  <div class="header-container"></div>
+  <div class="page-container">
+    <ul class="posts">
+      ${postsHtml}
+    </ul>
+  </div>
+`;
 
   appEl.innerHTML = appHtml;
 

@@ -31,9 +31,22 @@ body {
   overflow: auto;
   font-size: 14px;
   line-height: 18px;
+  background-color: #0a0a1a;
+  position: relative;
 }
 
-/* скрывает скролбары в chrome */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("./assets/images/Planet\ background.png");
+  background-repeat: repeat;
+  background-size: 350px 350px;
+  opacity: 0.08;
+  z-index: -1;
+  pointer-events: none;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }

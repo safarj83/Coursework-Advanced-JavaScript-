@@ -1,5 +1,13 @@
 .page-container {
+  max-width: 640px;
+  margin: 0 auto;
   padding: 0 20px;
+}
+
+.header-container {
+  background-color: #ffffff;
+  width: 100%;
+  margin-bottom: 8px;
 }
 
 .page-header {
@@ -7,9 +15,10 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #e0e0e0;
-  padding: 20px 16px;
-  margin-left: -20px;
-  margin-right: -20px;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -17,10 +26,6 @@
   font-size: 28px;
   cursor: pointer;
   width: 130px;
-}
-
-.header-container {
-  margin-bottom: 8px;
 }
 
 .header-button {
@@ -42,8 +47,17 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  padding: 0;
+  padding: 20px 0;
   margin: 0;
+  background-color: #ffffff;
+}
+
+.post-header,
+.post-likes,
+.post-text,
+.post-date {
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .post-header {
@@ -68,7 +82,7 @@
   height: 500px;
   display: flex;
   justify-content: center;
-  background-color: #e0e0e0;
+  background: transparent;
 }
 
 .post-image {
