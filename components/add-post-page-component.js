@@ -6,8 +6,8 @@ export function renderAddPostPageComponent({ appEl, onAddPostClick }) {
 
   const render = () => {
     const appHtml = `
+      <div class="header-container"></div>
       <div class="page-container">
-        <div class="header-container"></div>
         <div class="form">
           <h3 class="form-title">Добавить пост</h3>
           <div class="form-inputs">

@@ -7,8 +7,8 @@ import { formatDate } from "../helpers.js";
 export function renderUserPostsPageComponent({ appEl }) {
   if (posts.length === 0) {
     appEl.innerHTML = `
+      <div class="header-container"></div>
       <div class="page-container">
-        <div class="header-container"></div>
         <p style="color: #ffffff; text-align: center; padding: 40px 0;">
           У пользователя пока нет постов
         </p>
@@ -63,8 +63,8 @@ export function renderUserPostsPageComponent({ appEl }) {
     .join("");
 
   const appHtml = `
+    <div class="header-container"></div>
     <div class="page-container">
-      <div class="header-container"></div>
       <ul class="posts">
         ${postsHtml}
       </ul>

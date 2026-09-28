@@ -28,10 +28,6 @@
   width: 130px;
 }
 
-.header-container {
-  margin-bottom: 8px;
-}
-
 .header-button {
   padding: 0;
   border: none;
@@ -54,6 +50,14 @@
   padding: 20px 0;
   margin: 0;
   background-color: #ffffff;
+}
+
+.post-header,
+.post-likes,
+.post-text,
+.post-date {
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .post-header {
